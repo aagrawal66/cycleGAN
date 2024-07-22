@@ -22,6 +22,7 @@ cp ~/all_vicon_imgs_resized/* trainB/
 cp ~/ext_research_repos/Dataset/cygnus/cyg_nm_norm_4k/*image*.png ~/ext_research_repos/cycleGAN/datasets/more_lab/trainA/
 cp ~/ext_research_repos/Dataset/cygnus/cyg_nm_re_g_4k/*image*.png ~/ext_research_repos/cycleGAN/datasets/more_lab/trainA/
 cp ~/ext_research_repos/Dataset/cygnus/cyg_nm_re_o_2k/*image*.png ~/ext_research_repos/cycleGAN/datasets/more_lab/trainA/
+python3 train.py --dataroot ./datasets/more_lab/ --name more_data_syn2lab --model cycle_gan --display_id -1 --n_epochs 50 --n_epochs_decay 25  --batch_size 8
 ```
 
 ## Count number of files in a folder
