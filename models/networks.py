@@ -614,3 +614,13 @@ class PixelDiscriminator(nn.Module):
     def forward(self, input):
         """Standard forward."""
         return self.net(input)
+
+# # Example
+# f   = NLayerDiscriminator(
+#                         input_nc = 3
+#                         ,ndf=10000
+#                         ,n_layers = 3
+#                         ,norm_layer = nn.BatchNorm2d
+#                     )
+# num_params  = sum(p.numel() for p in f.parameters() if p.requires_grad)
+# print(f'Number of parameters: {num_params/1e6:.6f}M')
